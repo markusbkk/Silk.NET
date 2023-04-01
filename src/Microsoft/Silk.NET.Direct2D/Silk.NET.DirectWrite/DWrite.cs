@@ -17,7 +17,7 @@ namespace Silk.NET.DirectWrite
     {
         public static DWrite GetApi()
         {
-             return new(CreateDefaultContext(new DWriteLibraryNameContainer().GetLibraryName()));
+             return new(CreateDefaultContext(new DWriteLibraryNameContainer().GetLibraryNames()));
         }
 
         public bool TryGetExtension<T>(out T ext)
